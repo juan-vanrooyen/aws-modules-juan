@@ -1,0 +1,30 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# .terraform directories
+.terraform/
+
+# Terragrunt cache
+.terragrunt-cache/
+
+# Local .tfvars files (can contain secrets)
+*.tfvars
+*.tfvars.json
+
+# Ignore plan output
+*.plan
+
+# Ignore sensitive files
+*.pem
+*.key
+
+# Ignore editor and OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
