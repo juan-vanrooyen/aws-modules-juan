@@ -46,7 +46,7 @@ resource "aws_cloudwatch_log_group" "flow_logs" {
 module "flow_logs_bucket" {
   # checkov:skip=CKV_TF_1: Local module, commit hash not applicable
   # checkov:skip=CKV_TF_2: Local module, version pin not applicable
-  source      = "../terragrunt/live/modules/s3"
+  source      = "../s3"
   bucket_name = "${var.name}-vpc-flow-logs"
   tags        = var.tags
 }
